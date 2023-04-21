@@ -15,7 +15,7 @@ streamlit.text(my_data_row)
 
 new_fruit = streamlit.text_input('Add a fruit', 'Kiwi')
 streamlit.write('The user entered', new_fruit)
-my_cur.execute(f"insert into fruit_load_list values ({new_fruit})")
+my_cur.execute(f"insert into fruit_load_list values ('{new_fruit}')")
 
 streamlit.title('My Parents New Healthy Diner')
 
